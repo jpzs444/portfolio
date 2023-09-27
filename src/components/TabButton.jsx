@@ -8,7 +8,7 @@ const TabButton = ({ label, changeActiveTab, activeTab }) => {
 
   return (
     <button 
-      className={`info-text font-light px-6 py-3 cursor-pointer border-b-[2px] ${activeTab === label.title ? 'border-black' : 'border-transparent'}`}
+      className={`info-text font-light py-3 cursor-pointer border-b-[2px] hover:bg-slate-100 ${activeTab === label.title ? 'font-semibold border-black' : 'border-transparent'}`}
       onClick={toggleTab}
     >
       {label.title}

@@ -17,7 +17,7 @@ const AboutMe = () => {
         </div>
         <p className="info-text font-light">This section presents an overview of my personal background, education, and experience during my collegiate years.</p>
       </div>
-      <div className="mt-16 grid grid-cols-2 gap-16">
+      <div className="mt-16 grid max-xl:grid-cols-1 grid-cols-2 gap-16">
         {/* For the first col: img */}
         <div>
           <img 
@@ -30,7 +30,7 @@ const AboutMe = () => {
         {/* For the second col: text */}
         <div>
           {/* WORKING */}
-          <div className="flex">
+          <div className="grid grid-cols-4">
             {info.map((item) => (
               <TabButton 
                 key={item.id}
