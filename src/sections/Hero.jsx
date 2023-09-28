@@ -16,7 +16,7 @@ const Hero = () => {
           <Button label="View My Projects" 
             bgColor="bg-white" borderColor="border-black" labelColor="text-black"
           />
-          <TextButton label="Hire Me" iconURL={forwardButton}/>
+          <TextButton label="Hire Me" iconURL={forwardButton} iconHeight={22} iconWidth={22}/>
         </div>
       </div>
       {/* For the second col: img */}

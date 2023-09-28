@@ -1,6 +1,39 @@
+import { ProjectCard } from "../components";
+import { projects } from "../constants";
+
 const PersonalProjects = () => {
   return (
-    <div>PersonalProjects</div>
+    <section className="max-container">
+      {/* For the heading and intro */}
+      <div className="grid grid-cols-2 gap-16">
+        <div>
+          <h6 className="lg:text-lg text-md">Take a look at some of my </h6>
+          <h3 className="lg:text-5xl text-[3.9rem] font-semibold leading-[1.05] mt-1">Personal Projects</h3>
+        </div>
+        <p className="info-text font-light">This section covers a number of projects that I have built on the side utilizing a variety of front-end/UI technologies, frameworks, and approaches.</p>
+      </div>
+      {/* For the projects and img */}
+      <div>
+        {projects.map(project => (
+          <div 
+            key={project.id}
+            className="mt-24 grid max-xl:grid-cols-1 grid-cols-2 gap-16 px-32 projects-container"
+          >
+            <div className="w-full h-[350px] bg-gray-300 border-transparent rounded-lg project-image">
+              {/*<img />*/}
+            </div>
+            <ProjectCard  
+              title={project.title}
+              tags={project.tags}
+              content={project.content}
+              websiteLink={project.websiteLink}
+              githubLink={project.githubLink}
+            />
+          </div>
+        ))}
+      </div>
+        
+    </section>
   )
 }
 

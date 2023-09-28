@@ -62,16 +62,16 @@ export const projects = [
 		title: 'Modern UI/UX Business App',
 		tags: ['React', 'Tailwind CSS'],
 		content: 'A modern business landing page from a 10-hour course featuring reusable components, call-to-action buttons, testimonials, and others.',
-		websiteLink: '',
-		githubLink: '',
+		websiteLink: '#',
+		githubLink: '#',
 	},
 	{
 		id: 'project-2',
 		title: 'Dark Theme Landing Page',
 		tags: ['HTML', 'CSS'],
 		content: 'A dark-themed landing page challenge by Front-end Mentor built through a mobile-first workflow—this project served as a practice for applying CSS Grid and Flexbox.',
-		websiteLink: '',
-		githubLink: '',
+		websiteLink: '#',
+		githubLink: '#',
 	}
 ];
 

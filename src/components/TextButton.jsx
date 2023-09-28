@@ -1,12 +1,12 @@
-const TextButton = ({ label, iconURL }) => {
+const TextButton = ({ label, iconURL, iconHeight, iconWidth }) => {
   return (
-    <button className="flex justify-center items-center gap-2 text-black text-lg max-lg:text-md font-normal">
+    <button className="flex justify-center items-center gap-2 text-black text-lg max-lg:text-md font-medium font-inter">
       {label}
       <img 
         src={iconURL}
-        width={22}
-        height={22}
-        className="opacity-70"
+        width={iconWidth}
+        height={iconHeight}
+        className={`${iconURL ? "opacity-70" : "hidden"}`}
       />
     </button>
   )
