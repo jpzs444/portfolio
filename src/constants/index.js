@@ -1,3 +1,5 @@
+import { facebook, github2, linkedin, x } from "../assets/icons";
+
 export const navLinks = [
 	{
 		href: '#home',
@@ -12,8 +14,8 @@ export const navLinks = [
 		label: 'Projects'
 	},
 	{
-		href: '#cv',
-		label: 'CV'
+		href: '#resume',
+		label: 'Resume'
 	}
 ];
 
@@ -79,26 +81,26 @@ export const socials = [
 	{
 		id: 'social-1',
 		title: 'Facebook',
-		icon: '',
-		link: '',
+		icon: facebook,
+		link: 'https://www.facebook.com/jp.indiongco',
 	},
 	{
 		id: 'social-2',
-		title: 'Twitter',
-		icon: '',
-		link: '',
+		title: 'X',
+		icon: x,
+		link: 'https://twitter.com/jpzs444',
 	},
 	{
 		id: 'social-3',
 		title: 'LinkedIn',
-		icon: '',
-		link: '',
+		icon: linkedin,
+		link: 'https://www.linkedin.com/in/jpindiongco/',
 	},
 	{
 		id: 'social-4',
 		title: 'GitHub',
-		icon: '',
-		link: '',
+		icon: github2,
+		link: 'https://github.com/jpzs444',
 	}
 ];
 

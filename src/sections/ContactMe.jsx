@@ -3,14 +3,14 @@ import { Button } from "../components"
 
 const ContactMe = () => {
   return (
-    <section id="contact-me" className="max-container">
+    <section className="max-container">
       {/* For the heading and intro */}
       <div className="grid grid-cols-2 gap-16">
         <div>
           <h6 className="lg:text-lg text-md">Want to connect or say hi? </h6>
           <h3 className="lg:text-5xl text-[3.9rem] font-semibold leading-[1.05] mt-1">Contact Me</h3>
         </div>
-        <p className="info-text font-light">You may send me an email using the form below or get in touch with me through my socials: <a href="https://www.facebook.com/jp.indiongco" target="_blank" rel="noreferrer" className="font-medium">Facebook</a>, <a href="https://twitter.com/jpzs444" target="_blank" rel="noreferrer" className="font-medium">Twitter</a>, or <a href="https://www.linkedin.com/in/jpindiongco/" target="_blank" rel="noreferrer" className="font-medium">LinkedIn</a>.</p>
+        <p className="info-text font-light">You may send me an email using the form below or get in touch with me through my socials: <a href="https://www.facebook.com/jp.indiongco" target="_blank" rel="noreferrer" className="font-medium">Facebook</a>, <a href="https://twitter.com/jpzs444" target="_blank" rel="noreferrer" className="font-medium">X</a>, or <a href="https://www.linkedin.com/in/jpindiongco/" target="_blank" rel="noreferrer" className="font-medium">LinkedIn</a>.</p>
       </div>
       {/* For the contact form */}
       <form className="mt-16 px-32 info-text">
