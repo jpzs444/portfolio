@@ -22,9 +22,13 @@ const Nav = () => {
             height={26}
             className="cursor-pointer"
           />
-          <Button label="Hire Me" 
-            bgColor="bg-black" borderColor="border-black" labelColor="text-white"
-          />
+          <a href="#contact-me">
+            <Button 
+              label="Hire Me" 
+              bgColor="bg-black" 
+              borderColor="border-black" labelColor="text-white"
+            />
+          </a>
         </div>
         <div className="max-lg:block hidden">
           <img 

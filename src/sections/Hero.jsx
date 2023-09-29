@@ -13,10 +13,21 @@ const Hero = () => {
         <p className="info-text max-lg:text-lg font-light mt-8 w-[80%]">I believe that <span className="font-medium">adding functionality to aesthetics</span> significantly <span className="font-medium">boosts the credibility and engagement</span> of websites and web applications.</p>
 
         <div className="mt-11 flex justify-start items-center gap-5">
-          <Button label="View My Projects" 
-            bgColor="bg-white" borderColor="border-black" labelColor="text-black"
-          />
-          <TextButton label="Hire Me" iconURL={forwardButton} iconHeight={22} iconWidth={22}/>
+          <a href="#projects">
+            <Button 
+              label="View My Projects" 
+              bgColor="bg-white" 
+              borderColor="border-black" 
+              labelColor="text-black"
+            />
+          </a>
+          <a href="#contact-me">
+            <TextButton 
+              label="Hire Me" 
+              iconURL={forwardButton} 
+              iconHeight={22} 
+              iconWidth={22}/>
+          </a>
         </div>
       </div>
       {/* For the second col: img */}
