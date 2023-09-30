@@ -136,3 +136,28 @@ export const footerLinks = [
 		]
 	}
 ];
+
+export const inputFields = [
+	{
+		label: 'Name',
+		type: 'text',
+		id: 'name',
+		name: 'name',
+		minLength: 2,
+		required: true,
+	},
+	{
+		label: 'Email Address',
+		type: 'email',
+		id: 'email',
+		name: 'email',
+		required: true,
+	},
+	{
+		label: 'Subject',
+		type: 'text',
+		id: 'subject',
+		name: 'subject',
+		required: false,
+	}
+]

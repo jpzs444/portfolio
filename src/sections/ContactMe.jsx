@@ -1,5 +1,6 @@
 import { send } from "../assets/icons"
-import { Button } from "../components"
+import { Button, FormInput } from "../components"
+import { inputFields } from "../constants"
 
 const ContactMe = () => {
   return (
@@ -16,55 +17,16 @@ const ContactMe = () => {
       <form className="mt-16 px-32 info-text">
         <div className="grid grid-cols-2 gap-16 max-lg:grid-cols-1 max-lg:gap-8">
           {/* For the left column */}
-          <div>
-            {/* Name */}
-            <div>
-              <label htmlFor="name" className="font-medium">
-                Name <span className="text-[#890000]">*</span>
-              </label>
-              <div className="mt-3">
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  className="block w-full border-0 rounded-lg shadow-sm text-gray-700 px-3 py-1.5 text-lg ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-[#515B60] focus:outline-none"
-                />
-              </div>
-            </div>
-            {/* Email */}
-            <div className="mt-8">
-              <label htmlFor="email" className="font-medium">
-                Email Address <span className="text-[#890000]">*</span>
-              </label>
-              <div className="mt-3">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  className="block w-full border-0 rounded-lg shadow-sm text-gray-700 px-3 py-1.5 text-lg ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-[#515B60] focus:outline-none"
-                />
-              </div>
-            </div>
-            {/* Subject */}
-            <div className="mt-8">
-              <label htmlFor="subject" className="font-medium">
-                Subject
-              </label>
-              <div className="mt-3">
-                <input
-                  type="text"
-                  name="subject"
-                  id="subject"
-                  className="block w-full border-0 rounded-lg shadow-sm text-gray-700 px-3 py-1.5 text-lg ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-[#515B60] focus:outline-none"
-                />
-              </div>
-            </div>
+          <div className="flex flex-col gap-8">
+            {inputFields.map(field => (
+              <FormInput key={field} {...field}/>
+            ))}
           </div>
           {/* For the right column */}
           {/* Message */}
           <div>
             <label htmlFor="message" className="font-medium">
-              Message <span className="text-[#890000]">*</span>
+              Message<span className="text-[#890000]"> *</span>
             </label>
             <div className="mt-3">
               <textarea
