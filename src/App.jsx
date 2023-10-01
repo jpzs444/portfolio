@@ -13,7 +13,7 @@ const App = () => (
     <section id="projects" className="sm:px-24 px-12 sm:py-20 py-10">
       <PersonalProjects />
     </section>
-    <section id="contact-me" className="sm:px-24 px-12 sm:py-20 py-10">
+    <section id="contact-me" className="sm:px-24 px-12 sm:py-20 py-10 bg-[#FAFAFA]">
       <ContactMe />
     </section>
     <section className="sm:px-24 px-12 sm:py-20 py-10 bg-[#363636]">

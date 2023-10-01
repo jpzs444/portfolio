@@ -21,7 +21,7 @@ const Hero = () => {
               labelColor="text-black"
             />
           </a>
-          <a href="#contact-me">
+          <a href="mailto:josepaolo.indiongco@gmail.com" target="_blank" rel="noopener noreferrer">
             <TextButton 
               label="Hire Me" 
               iconURL={forwardButton} 

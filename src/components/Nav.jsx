@@ -22,7 +22,7 @@ const Nav = () => {
             height={26}
             className="cursor-pointer"
           />
-          <a href="#contact-me">
+          <a href="mailto:josepaolo.indiongco@gmail.com" target="_blank" rel="noopener noreferrer">
             <Button 
               label="Hire Me" 
               bgColor="bg-black" 

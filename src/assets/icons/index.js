@@ -9,6 +9,7 @@ import x from "../icons/x.png";
 import linkedin from "../icons/linkedin.png";
 import github2 from "../icons/github-2.png";
 import copyright from "../icons/copyright.png";
+import email from "../icons/email.png";
 
 export {
   darkMode,
@@ -21,5 +22,6 @@ export {
   x,
   linkedin,
   github2,
-  copyright
+  copyright,
+  email
 }
