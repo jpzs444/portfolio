@@ -27,6 +27,21 @@
   --tw-ring-color: red;
 } */
 
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip .tooltip-text::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50.5%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #004373 transparent;
+}
+
 @media only screen and (max-width: 1280px) {
   .projects-container:nth-child(2n+1) .project-image {
     order: 2;

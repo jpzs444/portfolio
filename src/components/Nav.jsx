@@ -14,14 +14,17 @@ const Nav = () => {
             </li>
           ))}
         </ul>
-        <div className="flex justify-center items-center gap-5 max-lg:hidden">
-          <img 
-            src={darkMode}
-            alt="dark mode"
-            width={26}
-            height={26}
-            className="cursor-pointer"
-          />
+        <div className="flex justify-center items-center xl:gap-5 max-lg:hidden">
+          <div className="relative tooltip">
+            <img 
+              src={darkMode}
+              alt="dark mode"
+              width={28}
+              height={28}
+              className="hover:cursor-pointer max-xl:hidden"
+            />
+            <span className="invisible opacity-0 transition-opacity bg-[#004373] text-white font-inter font-medium text-center py-2 px-4 w-[300px] rounded-lg tooltip-text absolute z-10 -right-32 top-11 -ml-14">Dark mode under development 👨‍💻</span>
+          </div>
           <a href="mailto:josepaolo.indiongco@gmail.com" target="_blank" rel="noopener noreferrer">
             <Button 
               label="Hire Me" 
