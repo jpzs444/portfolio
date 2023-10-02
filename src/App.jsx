@@ -4,13 +4,13 @@ import { Hero, AboutMe, PersonalProjects, ContactMe, Footer } from "./sections";
 const App = () => (
   <main className="relative">
     <Nav />
-    <section id="home" className="sm:px-24 px-12 sm:py-20 py-10 min-h-full">
+    <section id="home" className="sm:px-24 px-12 sm:pb-20 pb-10 sm:pt-40 pt-28 min-h-full">
       <Hero />
     </section>
-    <section id="about" className="sm:px-24 px-12 sm:py-20 py-10">
+    <section id="about" className="sm:px-24 px-12 /*sm:py-20 py-10*/ sm:pb-20 pb-10 sm:pt-40 pt-28">
       <AboutMe />
     </section>
-    <section id="projects" className="sm:px-24 px-12 sm:py-20 py-10">
+    <section id="projects" className="sm:px-24 px-12 /*sm:py-20 py-10*/ sm:pb-20 pb-10 sm:pt-40 pt-28">
       <PersonalProjects />
     </section>
     <section id="contact-me" className="sm:px-24 px-12 sm:py-20 py-10 bg-[#FAFAFA]">

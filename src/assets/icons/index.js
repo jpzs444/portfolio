@@ -10,6 +10,7 @@ import linkedin from "../icons/linkedin.png";
 import github2 from "../icons/github-2.png";
 import copyright from "../icons/copyright.png";
 import email from "../icons/email.png";
+import closeMenu from "../icons/close-menu.png";
 
 export {
   darkMode,
@@ -23,5 +24,6 @@ export {
   linkedin,
   github2,
   copyright,
-  email
+  email,
+  closeMenu
 }

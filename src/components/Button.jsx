@@ -6,7 +6,7 @@ const Button = ({ label, bgColor, borderColor, labelColor, iconURL, iconHeight, 
         src={iconURL}
         width={iconWidth}
         height={iconHeight}
-        className={`${iconURL ? "opacity-80" : "hidden"}`}
+        className={`${iconURL ? "opacity-80 -z-10" : "hidden"}`}
       />
     </button>
   )

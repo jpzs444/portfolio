@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <section className="max-container text-white">
       {/* For the top part: logo */}
-      <a href="#" className="inline-block bg-[#ECECEC] border-0 rounded-lg">
+      <a href="/" className="inline-block bg-[#ECECEC] border-0 rounded-lg">
         <h1 className="font-bold font-leagueSpartan text-4xl text-black h-[34px] mx-5 my-3">JPVI</h1>
       </a>
 

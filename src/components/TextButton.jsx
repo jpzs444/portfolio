@@ -6,7 +6,7 @@ const TextButton = ({ label, iconURL, iconHeight, iconWidth }) => {
         src={iconURL}
         width={iconWidth}
         height={iconHeight}
-        className={`${iconURL ? "opacity-70" : "hidden"}`}
+        className={`${iconURL ? "opacity-70 -z-10" : "hidden"}`}
       />
     </button>
   )
