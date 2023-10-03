@@ -10,14 +10,14 @@ const AboutMe = () => {
   return (
     <section className="max-container">
       {/* For the heading and intro */}
-      <div className="grid grid-cols-2 gap-16">
+      <div className="grid grid-cols-2 gap-16 max-md:grid-cols-1 max-md:gap-5">
         <div>
           <h6 className="lg:text-base text-sm">Know more </h6>
           <h3 className="md:text-5xl text-4xl font-semibold leading-[1.05] mt-1">About Me</h3>
         </div>
         <p className="info-text text-base max-lg:text-md font-light">This section presents an overview of my personal background, education, and experience during my collegiate years.</p>
       </div>
-      <div className="mt-16 grid max-xl:grid-cols-1 grid-cols-2 gap-16">
+      <div className="mt-16 max-md:mt-14 grid max-xl:grid-cols-1 grid-cols-2 gap-16 max-md:gap-8">
         {/* For the first col: img */}
         <div>
           <img 

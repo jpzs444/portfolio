@@ -7,13 +7,13 @@ const ProjectCard = ({ title, tags, content, websiteLink, githubLink }) => {
     <div className="flex flex-col justify-center">
       <h4 className="md:text-[2rem] text-3xl font-semibold leading-[1.05]">{title}</h4>
       <hr className="mt-2 w-12 border-t-2 border-black"/>
-      <div className="mt-6 flex flex-wrap">
+      <div className="mt-4 flex flex-wrap">
         {tags.map(tag => (
-          <div key={tag} className="mr-4 mb-2 px-4 lg:py-[2px] py-1 border md:text-sm text-xs border-opacity-50 rounded-2xl border-black font-light">{tag}</div>
+          <div key={tag} className="mr-2 mb-2 px-4 lg:py-[2px] py-1 border md:text-sm text-xs border-opacity-50 rounded-2xl border-black font-light">{tag}</div>
         ))}
       </div>
       <p className="mt-4 info-text">{content}</p>
-      <div className="mt-8 flex items-center gap-5">
+      <div className="mt-8 max-md:mt-6 flex items-center gap-5">
         <a href={websiteLink}>
           <Button 
             label="View Website" 
@@ -21,15 +21,15 @@ const ProjectCard = ({ title, tags, content, websiteLink, githubLink }) => {
             bgColor="bg-black" 
             labelColor="text-white" 
             iconURL={uprightArrow} 
-            iconHeight={16} 
-            iconWidth={16}/>
+            iconHeight={14} 
+            iconWidth={14}/>
         </a>
         <a href={githubLink}>
           <TextButton 
             label="GitHub Link" 
             iconURL={github} 
-            iconHeight={28} 
-            iconWidth={28}/>
+            iconHeight={22} 
+            iconWidth={22}/>
         </a>
       </div>
     </div>

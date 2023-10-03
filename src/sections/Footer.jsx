@@ -40,7 +40,7 @@ const Footer = () => {
       
       {/* For the bottom part: copyright */}
       <hr className="mt-11"/>
-      <div className="mt-7 flex max-md:justify-center items-center">
+      <div className="mt-7 flex items-center">
         <img
           src={copyright} 
           width={16}
