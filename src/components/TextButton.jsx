@@ -1,6 +1,6 @@
 const TextButton = ({ label, iconURL, iconHeight, iconWidth }) => {
   return (
-    <button className="flex justify-center items-center gap-2 text-black text-lg max-lg:text-md font-medium font-inter">
+    <button className="flex justify-center items-center gap-2 text-black text-md max-lg:text-sm font-medium font-inter">
       {label}
       <img 
         src={iconURL}

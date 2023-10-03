@@ -25,7 +25,7 @@ const Nav = () => {
 
 
   return (
-    <header className={`w-full sm:px-24 px-12 sm:py-6 py-3 fixed bg-white ${isMenuVisible ? "" : "bg-opacity-50 backdrop-blur-md shadow-sm"}`}>
+    <header className={`w-full sm:px-24 px-12 sm:py-3 py-3 fixed bg-white ${isMenuVisible ? "" : "bg-opacity-50 backdrop-blur-md shadow-sm"}`}>
       <div className="max-container flex justify-between items-center relative">
         <a href="/">
           <h1 className="font-bold font-leagueSpartan text-4xl h-[35px] cursor-pointer">JPVI</h1>
@@ -35,16 +35,16 @@ const Nav = () => {
           <img 
             src={isMenuVisible ? closeMenu : hamburger}
             alt="hamburger"
-            width={26}
-            height={26}
+            width={22}
+            height={22}
             className="cursor-pointer"
           />
         </button>
 
         <nav>
-          <ul data-visible={isMenuVisible} className="flex gap-14 text-[#585858] font-medium font-inter max-lg-nav">
+          <ul data-visible={isMenuVisible} className="flex gap-14 text-[#000000] text-sm font-inter max-lg-nav">
               {navLinks.map((link) => (
-                <li key={link.label} onClick={handleMenuClick} className="slide-left">
+                <li key={link.label} onClick={handleMenuClick}>
                   <a href={link.href}>{link.label}.</a>
                 </li>
               ))}
@@ -56,17 +56,19 @@ const Nav = () => {
             <img 
               src={darkMode}
               alt="dark mode"
-              width={28}
-              height={28}
-              className="hover:cursor-pointer max-xl:hidden"
+              width={25}
+              height={25}
+              className="hover:cursor-not-allowed max-xl:hidden"
             />
-            <span className="invisible opacity-0 transition-opacity bg-[#004373] text-white font-inter font-medium text-center py-2 px-4 w-[300px] rounded-lg tooltip-text absolute z-10 -right-32 top-11 -ml-14">Dark mode under development 👨‍💻</span>
+            <span className="invisible opacity-0 transition-opacity bg-[#004373] text-white font-inter text-sm font-medium text-center py-2 px-3.5 w-[260px] rounded-lg tooltip-text absolute z-10 -right-32 top-11 -ml-14">Dark mode under development 👨‍💻</span>
           </div>
           <a href="mailto:josepaolo.indiongco@gmail.com" target="_blank" rel="noopener noreferrer">
             <Button 
               label="Hire Me" 
               bgColor="bg-black" 
               borderColor="border-black" labelColor="text-white"
+              paddingY="py-[6px]"
+              paddingX="px-[23px]"
             />
           </a>
         </div>

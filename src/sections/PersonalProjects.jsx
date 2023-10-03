@@ -7,10 +7,10 @@ const PersonalProjects = () => {
       {/* For the heading and intro */}
       <div className="grid grid-cols-2 gap-16">
         <div>
-          <h6 className="lg:text-lg text-md">Take a look at some of my </h6>
-          <h3 className="lg:text-5xl text-[3.9rem] font-semibold leading-[1.05] mt-1">Personal Projects</h3>
+          <h6 className="lg:text-base text-sm">Take a look at some of my </h6>
+          <h3 className="md:text-5xl text-4xl font-semibold leading-[1.05] mt-1">Personal Projects</h3>
         </div>
-        <p className="info-text font-light">This section covers a number of projects that I have built on the side utilizing a variety of front-end/UI technologies, frameworks, and approaches.</p>
+        <p className="info-text text-base max-lg:text-md font-light">This section covers a number of projects that I have built on the side utilizing a variety of front-end/UI technologies, frameworks, and approaches.</p>
       </div>
       {/* For the projects and img */}
       <div>

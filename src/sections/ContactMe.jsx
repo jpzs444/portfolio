@@ -11,10 +11,10 @@ const ContactMe = () => {
       {/* For the heading and intro */}
       <div className="flex flex-col items-center gap-7">
         <div>
-          <h6 className="lg:text-lg text-md text-center">Want to connect?</h6>
-          <h3 className="lg:text-5xl text-[3.9rem] font-medium leading-[1] text-center mt-1">Let&apos;s Work Together</h3>
+          <h6 className="lg:text-base text-sm text-center">Want to connect?</h6>
+          <h3 className="/*lg:text-5xl text-[3.9rem]*/ md:text-5xl text-4xl font-medium leading-[1] text-center mt-1">Let&apos;s Work Together</h3>
         </div>
-        <p className="max-w-lg font-inter text-[#1D1D1D] text-xl font-light text-center">You may send me an email or get in touch with me through my socials: <a href="https://www.facebook.com/jp.indiongco" target="_blank" rel="noopener noreferrer" className="font-medium">Facebook</a>, <a href="https://twitter.com/jpzs444" target="_blank" rel="noopener noreferrer" className="font-medium">X</a>, or <a href="https://www.linkedin.com/in/jpindiongco/" target="_blank" rel="noopener noreferrer" className="font-medium">LinkedIn</a>.</p>
+        <p className="max-w-lg font-inter text-[#1D1D1D] /*text-xl*/ text-base max-lg:text-md font-light text-center">You may send me an email or get in touch with me through my socials: <a href="https://www.facebook.com/jp.indiongco" target="_blank" rel="noopener noreferrer" className="font-medium">Facebook</a>, <a href="https://twitter.com/jpzs444" target="_blank" rel="noopener noreferrer" className="font-medium">X</a>, or <a href="https://www.linkedin.com/in/jpindiongco/" target="_blank" rel="noopener noreferrer" className="font-medium">LinkedIn</a>.</p>
 
         <a href="mailto:josepaolo.indiongco@gmail.com" target="_blank" rel="noopener noreferrer" className="mt-3">
           <Button 

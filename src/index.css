@@ -38,8 +38,8 @@ body {
     z-index: 40;
     background-color: #ffffff;
     padding: 7vh 0 0 12%;
-    gap: 1rem;
-    font-size: 1.55rem;
+    gap: 1.25rem;
+    font-size: 1.5rem;
     
     transform: translateX(100%);
     transition: transform 250ms ease-out;
@@ -66,10 +66,17 @@ body {
   content: "";
   position: absolute;
   bottom: 100%;
-  left: 50.5%;
+  left: 43%;
   border-width: 5px;
   border-style: solid;
   border-color: transparent transparent #004373 transparent;
+}
+
+@media only screen and (max-width: 767px) {
+  .tab-group-scroll {
+    grid-template-columns: repeat(4, 130px);
+    overflow-x: auto;
+  }
 }
 
 @media only screen and (max-width: 1280px) {
@@ -80,14 +87,13 @@ body {
 
 @layer components {
   .max-container {
-    max-width: 1440px;
-    margin: 0 auto
+    @apply max-w-[1440px] my-0 mx-auto;
   }
 }
 
 @layer utilities {
   .info-text {
-    @apply font-inter text-[#1D1D1D] text-xl;
+    @apply font-inter text-[#1D1D1D];
   }
 }
 
