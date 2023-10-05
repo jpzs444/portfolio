@@ -14,7 +14,7 @@ const ContactMe = () => {
           <h6 className="lg:text-base text-sm text-center">Want to connect?</h6>
           <h3 className="/*lg:text-5xl text-[3.9rem]*/ md:text-5xl text-4xl font-medium leading-[1] text-center mt-1">Let&apos;s Work Together</h3>
         </div>
-        <p className="max-w-lg font-inter text-[#1D1D1D] /*text-xl*/ text-base max-lg:text-md font-light text-center max-md:px-10">You may send me an email or get in touch with me through my socials: <a href="https://www.facebook.com/jp.indiongco" target="_blank" rel="noopener noreferrer" className="font-medium">Facebook</a>, <a href="https://twitter.com/jpzs444" target="_blank" rel="noopener noreferrer" className="font-medium">X</a>, or <a href="https://www.linkedin.com/in/jpindiongco/" target="_blank" rel="noopener noreferrer" className="font-medium">LinkedIn</a>.</p>
+        <p className="max-w-lg font-inter text-[#1D1D1D] /*text-xl*/ text-base max-lg:text-md font-light text-center max-md:px-10">You may send me an email or get in touch with me through my socials: <a href="https://www.facebook.com/jp.indiongco" target="_blank" rel="noopener noreferrer" className="font-medium hover:text-[#2a407c] hover:transition-all">Facebook</a>, <a href="https://twitter.com/jpzs444" target="_blank" rel="noopener noreferrer" className="font-medium hover:text-[#2a407c] hover:transition-all">X</a>, or <a href="https://www.linkedin.com/in/jpindiongco/" target="_blank" rel="noopener noreferrer" className="font-medium hover:text-[#2a407c] hover:transition-all">LinkedIn</a>.</p>
 
         <a href="mailto:josepaolo.indiongco@gmail.com" target="_blank" rel="noopener noreferrer" className="mt-3">
           <Button 
@@ -24,7 +24,7 @@ const ContactMe = () => {
           labelColor="text-white"
           iconURL={email}
           iconWidth={15}
-          // iconHeight={}
+          hoverStyles="transition-all hover:bg-opacity-80"
           />
         </a>
       </div>

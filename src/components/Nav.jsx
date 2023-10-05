@@ -42,10 +42,14 @@ const Nav = () => {
         </button>
 
         <nav>
-          <ul data-visible={isMenuVisible} className="flex gap-14 text-[#000000] text-sm font-inter max-lg-nav">
+          <ul data-visible={isMenuVisible} className="flex gap-14 text-[#000000] text-sm font-inter max-lg-nav z-50">
               {navLinks.map((link) => (
-                <li key={link.label} onClick={handleMenuClick}>
-                  <a href={link.href}>{link.label}.</a>
+                <li 
+                  key={link.label} 
+                  onClick={handleMenuClick}>
+                  <a 
+                    href={link.href} className="transition-all hover:bg-slate-100 p-2 hover:rounded-md"
+                    >{link.label}.</a>
                 </li>
               ))}
           </ul>
@@ -69,6 +73,7 @@ const Nav = () => {
               borderColor="border-black" labelColor="text-white"
               paddingY="py-[6px]"
               paddingX="px-[23px]"
+              hoverStyles="transition-all hover:bg-opacity-80 hover:border-opacity-80"
             />
           </a>
         </div>

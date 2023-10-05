@@ -19,6 +19,7 @@ const Hero = () => {
               bgColor="bg-white" 
               borderColor="border-black" 
               labelColor="text-black"
+              hoverStyles="transition-all hover:bg-black hover:text-white"
             />
           </a>
           <a href="mailto:josepaolo.indiongco@gmail.com" target="_blank" rel="noopener noreferrer">
@@ -26,7 +27,8 @@ const Hero = () => {
               label="Hire Me" 
               iconURL={forwardButton} 
               iconHeight={16} 
-              iconWidth={16}/>
+              iconWidth={16}
+              hoverStyles="transition-all hover:border-b hover:border-b-slate-950"/>
           </a>
         </div>
       </div>

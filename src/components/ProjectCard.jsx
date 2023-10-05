@@ -22,14 +22,16 @@ const ProjectCard = ({ title, tags, content, websiteLink, githubLink }) => {
             labelColor="text-white" 
             iconURL={uprightArrow} 
             iconHeight={14} 
-            iconWidth={14}/>
+            iconWidth={14}
+            hoverStyles="transition-all hover:bg-opacity-80"/>
         </a>
         <a href={githubLink}>
           <TextButton 
             label="GitHub Link" 
             iconURL={github} 
             iconHeight={22} 
-            iconWidth={22}/>
+            iconWidth={22}
+            hoverStyles="transition-all hover:border-b hover:border-b-slate-950"/>
         </a>
       </div>
     </div>

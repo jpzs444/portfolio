@@ -55,8 +55,6 @@ body {
   transform: translateX(0);
 }
 
-
-
 .tooltip:hover .tooltip-text {
   visibility: visible;
   opacity: 1;

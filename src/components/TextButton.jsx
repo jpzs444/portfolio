@@ -1,6 +1,6 @@
-const TextButton = ({ label, iconURL, iconHeight, iconWidth }) => {
+const TextButton = ({ label, iconURL, iconHeight, iconWidth, hoverStyles }) => {
   return (
-    <button className="flex justify-center items-center gap-2 text-black text-md max-lg:text-sm font-medium font-inter">
+    <button className={`flex justify-center items-center gap-2 text-black text-base max-lg:text-sm text-[0.95rem] font-inter border-b border-b-transparent ${hoverStyles}`}>
       {label}
       <img 
         src={iconURL}

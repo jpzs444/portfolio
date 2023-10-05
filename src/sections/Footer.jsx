@@ -14,18 +14,18 @@ const Footer = () => {
         <ul className="flex flex-col flex-wrap gap-y-4 gap-x-24 h-32 max-md:h-auto w-auto font-medium text-base">
           {navLinks.map(link => (
             <li key={link}>
-              <a href={link.href}>{link.label}</a>
+              <a href={link.href} className="transition-all hover:text-gray-300">{link.label}</a>
             </li>
           ))}
           <li>
-          <a href="#contact-me">Contact Me</a>
+            <a href="#contact-me" className="transition-all hover:text-gray-300">Contact Me</a>
           </li>
         </ul>
         {/* For the right part */}
         <div>
           <div className="flex justify-end max-md:justify-start gap-7 max-md:gap-4">
             {socials.map(social => (
-              <a key={social} href={social.link}>
+              <a key={social} href={social.link} className="transition-all hover:opacity-80">
                 <img 
                   src={social.icon}
                   width={30}
@@ -33,8 +33,8 @@ const Footer = () => {
               </a>
             ))}
           </div>
-          <p className="mt-7 font-light text-right max-md:text-left">Icons by <a href="https://icons8.com/" className="font-medium">Icons8</a></p>
-          <p className="mt-2 font-light text-right max-md:text-left">People Illustrations by <a href="https://storyset.com/" className="font-medium">Storyset</a></p>
+          <p className="mt-7 font-light text-right max-md:text-left">Icons by <a href="https://icons8.com/" rel="noopener noreferrer" target="_blank" className="font-medium transition-all hover:text-gray-300">Icons8</a></p>
+          <p className="mt-2 font-light text-right max-md:text-left">People Illustrations by <a href="https://storyset.com/" rel="noopener noreferrer" target="_blank"  className="font-medium transition-all hover:text-gray-300">Storyset</a></p>
         </div>
       </div>
       
