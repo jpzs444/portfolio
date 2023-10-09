@@ -14,7 +14,7 @@ export const navLinks = [
 		label: 'Projects'
 	},
 	{
-		href: './resume.pdf',
+		href: './static/resume.pdf',
 		rel: 'noopener noreferrer',
 		target: '_blank',
 		label: 'Resume'
