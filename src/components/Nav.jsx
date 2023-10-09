@@ -48,7 +48,7 @@ const Nav = () => {
                   key={link.label} 
                   onClick={handleMenuClick}>
                   <a 
-                    href={link.href} className="transition-all hover:bg-slate-100 p-2 hover:rounded-md"
+                    href={link.href} rel={link.rel} target={link.target} className="transition-all hover:bg-slate-100 p-2 hover:rounded-md"
                     >{link.label}.</a>
                 </li>
               ))}
