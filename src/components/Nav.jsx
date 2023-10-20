@@ -25,7 +25,7 @@ const Nav = () => {
 
 
   return (
-    <header className={`w-full sm:px-24 px-5 sm:py-3 py-3 fixed bg-white ${isMenuVisible ? "" : "bg-opacity-50 backdrop-blur-md shadow-sm"}`}>
+    <header className={`z-50 w-full sm:px-24 px-5 sm:py-3 py-3 fixed bg-white ${isMenuVisible ? "" : "bg-opacity-50 backdrop-blur-md shadow-sm"}`}>
       <div className="max-container flex justify-between items-center relative">
         <a href="/">
           <h1 className="font-bold font-leagueSpartan text-4xl h-[35px] cursor-pointer">JPVI</h1>
