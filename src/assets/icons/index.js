@@ -11,6 +11,7 @@ import github2 from "../icons/github-2.png";
 import copyright from "../icons/copyright.png";
 import email from "../icons/email.png";
 import closeMenu from "../icons/close-menu.png";
+import bullet from "../icons/bullet.png";
 
 export {
   darkMode,
@@ -25,5 +26,6 @@ export {
   github2,
   copyright,
   email,
-  closeMenu
+  closeMenu,
+  bullet
 }

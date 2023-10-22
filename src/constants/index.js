@@ -24,40 +24,35 @@ export const navLinks = [
 export const info = [
 	{
 		id: 'info-1',
-		title: 'Background',
-		content: [
-			"Background Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-
-			"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-		],
+		title: 'Education',
+		content: []
 	},
 	{
 		id: 'info-2',
-		title: 'Education',
-		content: [
-			"Education Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-
-			"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-		]
+		title: 'Experience',
+		content: []
 	},
 	{
 		id: 'info-3',
-		title: 'Experience',
+		title: 'Skills',
 		content: [
-			"Experience Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-
-			"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			{
+				label: "Hard Skills",
+				skills: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Bootstrap", "Sass", "Git", "GitHub", "Figma", "Canva", "Microsoft Excel", "Google Sheets", "Microsoft Word", "Google Docs", "Google Forms"]
+			},
+			{
+				label: "Soft Skills",
+				skills: ["Communication", "Work Ethic", "Attention to Detail", "Teamwork", "Organization", "Problem Solving", "Critical Thinking", "Adaptability", "Decision Making", "Time Management"]
+			}
 		]
 	},
 	{
 		id: 'info-4',
-		title: 'Skills',
+		title: 'Hobbies',
 		content: [
-			"Skills Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-
-			"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-		]
-	}
+			"Reading", "Weight training", "Watching volleyball", "Playing guitar", "Drawing", "Sudoku", "Playing video games", "Photography", "Watching video game livestreams"
+		],
+	},
 ];
 
 export const projects = [
