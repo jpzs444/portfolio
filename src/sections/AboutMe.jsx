@@ -90,7 +90,7 @@ const AboutMe = () => {
                   <div>
                     <p className="font-semibold">Hard Skills:</p>
                       {skills.content.filter(content => content.label === "Hard Skills").map(hardSkills => (
-                        <ul key={hardSkills} className="xl:grid xl:grid-cols-2 mt-2">
+                        <ul key={hardSkills} className="2xl:grid 2xl:grid-cols-2 mt-2">
                           {hardSkills.skills.map(skill => (
                             <li key={skill} className="flex items-start gap-1">
                               <img src={bullet} width={12} className="inline-block opacity-20 mt-[6px]"/>{skill}
@@ -103,7 +103,7 @@ const AboutMe = () => {
                   <div>
                     <p className="font-semibold">Soft Skills:</p>
                     {skills.content.filter(content => content.label === "Soft Skills").map(softSkills => (
-                      <ul key={softSkills} className="xl:grid xl:grid-cols-2 mt-2">
+                      <ul key={softSkills} className="2xl:grid 2xl:grid-cols-2 mt-2">
                         {softSkills.skills.map(skill => (
                           <li key={skill} className="flex items-start gap-1">
                             <img src={bullet} width={12} className="inline-block opacity-20 mt-[6px]"/>{skill}
@@ -119,7 +119,7 @@ const AboutMe = () => {
             {/* Hobbies */}
             <div className={`info-text mt-4 ${toggleState === "Hobbies" ? 'block' : 'hidden'}`}>
               {info.filter(infoItem => infoItem.id === "info-4").map(hobbies => (
-                  <ul key={hobbies.id} className="hobbies grid grid-cols-2 md:grid-cols-3 gap-x-5">
+                  <ul key={hobbies.id} className="hobbies grid grid-cols-2 md:grid-cols-3 gap-x-3 max-md:gap-x-5">
                     {hobbies.content.map((hobby) => (
                       <li key={hobby} className="flex items-start gap-1">
                         <img src={bullet} width={12} className="inline-block opacity-20 mt-[6px]"/>{hobby}
