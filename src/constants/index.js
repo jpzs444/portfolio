@@ -1,4 +1,5 @@
 import { facebook, github2, linkedin, x } from "../assets/icons";
+import { fylo, grid, jpvi, linked, pod, splitter } from "../assets/images";
 
 export const navLinks = [
 	{
@@ -55,23 +56,62 @@ export const info = [
 	},
 ];
 
+// TO-DO: Complete details for my personal projects :)
 export const projects = [
 	{
 		id: 'project-1',
-		title: 'Modern UI/UX Business App',
-		tags: ['React', 'Tailwind CSS'],
-		content: 'A modern business landing page from a 10-hour course featuring reusable components, call-to-action buttons, testimonials, and others.',
-		websiteLink: '#',
-		githubLink: '#',
+		title: 'JPVI',
+		tags: ['React', 'Tailwind CSS', 'Figma'],
+		content: 'My personal and portfolio website designed on Figma and built with React and Tailwind CSS.',
+		websiteLink: 'https://josepaoloindiongco.vercel.app/',
+		githubLink: 'https://github.com/jpzs444/portfolio',
+		imgLink: jpvi,
 	},
 	{
 		id: 'project-2',
-		title: 'Dark Theme Landing Page',
-		tags: ['HTML', 'CSS'],
-		content: 'A dark-themed landing page challenge by Front-end Mentor built through a mobile-first workflow—this project served as a practice for applying CSS Grid and Flexbox.',
-		websiteLink: '#',
-		githubLink: '#',
-	}
+		title: 'Fylo',
+		tags: ['HTML', 'CSS', 'JavaScript'],
+		content: 'A dark-themed landing page challenge by Frontend Mentor built through a mobile-first workflow—this project served as a practice for applying CSS Grid and Flexbox.',
+		websiteLink: 'https://jpzs444.github.io/fylo-dark-theme-landing-page/',
+		githubLink: 'https://github.com/jpzs444/fylo-dark-theme-landing-page',
+		imgLink: fylo,
+	},
+	{
+		id: 'project-3',
+		title: 'Pod',
+		tags: ['HTML', 'CSS', 'Sass', 'JavaScript'],
+		content: 'An early access landing page with custom form validation using HTML, CSS, Sass, and JavaScript; challenge by Frontend Mentor.',
+		websiteLink: 'https://jpzs444.github.io/pod-landing-page',
+		githubLink: 'https://github.com/jpzs444/pod-landing-page',
+		imgLink: pod,
+	},
+	{
+		id: 'project-4',
+		title: 'Linked',
+		tags: ['HTML', 'CSS', 'JavaScript'],
+		content: 'A custom Chrome extension for bookmarking webpages; built with HTML, CSS, and JavaScript.',
+		websiteLink: '',
+		githubLink: 'https://github.com/jpzs444/linked-chrome-extension',
+		imgLink: linked,
+	},
+	{
+		id: 'project-5',
+		title: 'Splitter',
+		tags: ['HTML', 'CSS', 'JavaScript'],
+		content: 'A tip calculator app built with HTML, CSS, and JavaScript, achieving all the functionalities, design layouts, and hover states provided by Frontend Mentor.',
+		websiteLink: 'https://jpzs444.github.io/tip-calculator-app',
+		githubLink: 'https://github.com/jpzs444/tip-calculator-app',
+		imgLink: splitter,
+	},
+	{
+		id: 'project-6',
+		title: 'Testimonials Grid Section',
+		tags: ['HTML', 'CSS', 'JavaScript'],
+		content: 'A responsive grid section challenge by Frontend Mentor; built with HTML, CSS, and JavaScript.',
+		websiteLink: 'https://jpzs444.github.io/testimonials-grid-section/',
+		githubLink: 'https://github.com/jpzs444/testimonials-grid-section',
+		imgLink: grid,
+	},
 ];
 
 export const socials = [

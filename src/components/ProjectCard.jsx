@@ -14,7 +14,7 @@ const ProjectCard = ({ title, tags, content, websiteLink, githubLink }) => {
       </div>
       <p className="mt-4 info-text">{content}</p>
       <div className="mt-8 max-md:mt-6 flex items-center gap-5">
-        <a href={websiteLink}>
+        <a href={websiteLink} rel="noopener noreferrer" target="_blank" className={`${websiteLink ? "block" : "hidden"}`}>
           <Button 
             label="View Website" 
             borderColor="border-black" 
@@ -25,7 +25,7 @@ const ProjectCard = ({ title, tags, content, websiteLink, githubLink }) => {
             iconWidth={14}
             hoverStyles="transition-all hover:bg-opacity-80"/>
         </a>
-        <a href={githubLink}>
+        <a href={githubLink} rel="noopener noreferrer" target="_blank">
           <TextButton 
             label="GitHub Link" 
             iconURL={github} 

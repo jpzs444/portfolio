@@ -19,8 +19,11 @@ const PersonalProjects = () => {
             key={project.id}
             className="mt-24 max-md:mt-20 grid max-xl:grid-cols-1 grid-cols-2 gap-16 max-xl:gap-8 px-32 max-md:px-0 projects-container"
           >
-            <div className="w-full h-[350px] bg-gray-300 border-transparent rounded-lg project-image">
-              {/*<img />*/}
+            <div className="bg-gray-300 border-transparent rounded-lg project-image /*hover:scale-105 transition*/ overflow-hidden">
+              <img 
+                src={project.imgLink}
+                className="w-full h-[350px] object-contain rounded-lg hover:scale-110 transition-all duration-300"
+              />
             </div>
             <ProjectCard  
               title={project.title}
