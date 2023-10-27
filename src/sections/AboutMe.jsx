@@ -55,7 +55,7 @@ const AboutMe = () => {
             <div className={`info-text mt-4 ${toggleState === "Experience" ? 'flex flex-col gap-8' : 'hidden'}`}>
               <div>
                 <p className="font-semibold text-lg leading-6">BU Intellectual Property Management Division (IPMD)</p>
-                <p className="font-semibold text-sky-950 leading-5">On-the-Job Trainee, <span className="font-light text-sm text-black">February 2023 — April 2023</span></p>
+                <p className="font-semibold text-sky-950 leading-5">On-the-Job Trainee, <span className="font-light text-sm text-black">January 2023 — April 2023</span></p>
                 <ul className="mt-2">
                   <li className="flex items-start gap-1">
                     <img src={bullet} width={12} className="inline-block opacity-20 mt-[6px]"/><p>Updated regularly the records of IPMD&apos;s online database with Google Sheets containing over 100 IP applications (e.g., trademarks, copyrights, patents, utility models, and industrial designs) authored largely by the faculty and students of Bicol University</p>
