@@ -15,7 +15,7 @@ export const navLinks = [
 		label: 'Projects'
 	},
 	{
-		href: './static/resume.pdf',
+		href: './static/Indiongco_JosePaolo_Resume.pdf',
 		rel: 'noopener noreferrer',
 		target: '_blank',
 		label: 'Resume'
