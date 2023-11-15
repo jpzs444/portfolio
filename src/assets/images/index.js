@@ -6,6 +6,7 @@ import splitter from "../images/splitter.png";
 import grid from "../images/grid.png";
 import linked from "../images/linked.png";
 import jpvi from "../images/jpvi.png";
+import countries from "../images/countries.png";
 
 export {
   heroIllustration,
@@ -15,5 +16,6 @@ export {
   splitter,
   grid,
   linked,
-  jpvi
+  jpvi,
+  countries
 }

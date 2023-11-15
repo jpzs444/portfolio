@@ -58,13 +58,19 @@ const AboutMe = () => {
                 <p className="font-semibold text-sky-950 leading-5">On-the-Job Trainee, <span className="font-light text-sm text-black">January 2023 — April 2023</span></p>
                 <ul className="mt-2">
                   <li className="flex items-start gap-1">
-                    <img src={bullet} width={12} className="inline-block opacity-20 mt-[6px]"/><p>Updated regularly the records of IPMD&apos;s online database with Google Sheets containing over 100 IP applications (e.g., trademarks, copyrights, patents, utility models, and industrial designs) authored largely by the faculty and students of Bicol University</p>
+                    <img src={bullet} width={12} className="inline-block opacity-20 mt-[6px]"/><p>Managed and maintained the integrity of IPMD’s online database containing over 100 intellectual property applications authored primarily by the constituents of Bicol University; the up-to-date information enabled the technical staff to provide timely updates to clients during their transactions</p>
                   </li>
                   <li className="flex items-start gap-1">
-                    <img src={bullet} width={12} className="inline-block opacity-20 mt-[6px]"/><p>Encoded 190 filled-out feedback forms from one of IPMD&apos;s trainings/seminars and further made a client satisfaction and feedback analysis for documentation purposes</p>
+                    <img src={bullet} width={12} className="inline-block opacity-20 mt-[6px]"/><p>Utilized data encoding skills to process in Google Forms the 190 feedback forms collected during one of IPMD’s training/seminar events; subsequently, I conducted a client satisfaction and feedback analysis for documentation purposes</p>
                   </li>
                   <li className="flex items-start gap-1">
-                    <img src={bullet} width={12} className="inline-block opacity-20 mt-[6px]"/><p>Designed 2 tarpaulins and 11 placards using Canva for IPMD&apos;s IP Awareness Campaign in the different colleges and campuses of Bicol University</p>
+                    <img src={bullet} width={12} className="inline-block opacity-20 mt-[6px]"/><p>Consolidated and documented over 50 registered intellectual property rights from the extensive records of IPMD; the consolidation allowed the office to submit an entry for an award nomination focused on research and development</p>
+                  </li>
+                  <li className="flex items-start gap-1">
+                    <img src={bullet} width={12} className="inline-block opacity-20 mt-[6px]"/><p>Produced 13 graphic designs, including tarpaulins and placards, using Canva as part of IPMD’s intellectual property awareness campaign; the visual materials resulted in a broader and enhanced dissemination of information throughout the colleges and campuses of Bicol University</p>
+                  </li>
+                  <li className="flex items-start gap-1">
+                    <img src={bullet} width={12} className="inline-block opacity-20 mt-[6px]"/><p>Facilitated a series of seminars of IPMD, took proper documentation, and assisted in operating various equipment and devices that not only contributed to the success of each event but also improved the overall experience for both participants and speakers</p>
                   </li>
                 </ul>
               </div>
@@ -74,10 +80,13 @@ const AboutMe = () => {
                 <p className="font-semibold text-sky-950 leading-5">Community Moderator & Social Media Manager, <span className="font-light text-sm text-black">June 2021 — February 2022</span></p>
                 <ul className="mt-2">
                   <li className="flex items-start gap-1">
-                    <img src={bullet} width={12} className="inline-block opacity-20 mt-[6px]"/><p>Ensured that the SurPath Hub&apos;s Discord community was a safe and healthy space for all its members</p>
+                    <img src={bullet} width={12} className="inline-block opacity-20 mt-[6px]"/><p>Ensured a safe, harmonious, and inclusive Discord Community for SurPath Hub by utilizing moderator privileges, such as message deletion and moderation and user suspension and banning</p>
                   </li>
                   <li className="flex items-start gap-1">
-                    <img src={bullet} width={12} className="inline-block opacity-20 mt-[6px]"/><p>Handled several social media accounts (e.g., Facebook, Twitter, and Instagram) of SurPath Hub and posted various content to promote the community&apos;s activities and uphold its online presence</p>
+                    <img src={bullet} width={12} className="inline-block opacity-20 mt-[6px]"/><p>Managed and curated content for multiple social media accounts for SurPath Hub; successfully promoted community events and activities, resulting in increased engagement and a growing online presence</p>
+                  </li>
+                  <li className="flex items-start gap-1">
+                    <img src={bullet} width={12} className="inline-block opacity-20 mt-[6px]"/><p>Practiced contributing to open source (through GitHub) by developing and integrating card components into one of the community&apos;s web pages for the 100 Days of Code challenge; the components constitute at least 25% of the page, providing valuable information about the conducted activities to members and participants</p>
                   </li>
                 </ul>
               </div>
@@ -116,13 +125,13 @@ const AboutMe = () => {
               ))}
             </div>
             
-            {/* Hobbies */}
-            <div className={`info-text mt-4 ${toggleState === "Hobbies" ? 'block' : 'hidden'}`}>
-              {info.filter(infoItem => infoItem.id === "info-4").map(hobbies => (
-                  <ul key={hobbies.id} className="hobbies grid grid-cols-2 md:grid-cols-3 gap-x-3 max-md:gap-x-5">
-                    {hobbies.content.map((hobby) => (
-                      <li key={hobby} className="flex items-start gap-1">
-                        <img src={bullet} width={12} className="inline-block opacity-20 mt-[6px]"/>{hobby}
+            {/* Interests */}
+            <div className={`info-text mt-4 ${toggleState === "Interests" ? 'block' : 'hidden'}`}>
+              {info.filter(infoItem => infoItem.id === "info-4").map(interests => (
+                  <ul key={interests.id} className="grid grid-cols-2 md:grid-cols-3 gap-x-3 max-md:gap-x-5">
+                    {interests.content.map((interest) => (
+                      <li key={interest} className="flex items-start gap-1">
+                        <img src={bullet} width={12} className="inline-block opacity-20 mt-[6px]"/>{interest}
                       </li>
                     ))}
                   </ul>
